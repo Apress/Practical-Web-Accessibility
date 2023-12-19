@@ -1,0 +1,107 @@
+/* -----------------------------------------------------------------------------
+ * Video styling
+ * -------------------------------------------------------------------------- */
+
+.wrapper { margin-bottom: 2.4rem; }
+
+video {
+	display: block;
+	background-color: black;
+}
+
+.video-wrap {
+	position: relative;
+	text-align: center;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.video-wrap,
+.video-wrap video,
+.video-wrap img {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.video-wrap h2 {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 80%;
+	margin-top: 0;
+	color: #E2896C;
+	font-size: 4.0rem;
+	text-align: left;
+	text-shadow: 1px 1px 1px black;
+}
+
+@media screen and (min-width: 600px) {
+
+	.video-wrap h2 {
+		left: 8%;
+	}
+}
+
+.video-wrap button {
+	position: absolute;
+	right: 32px;
+	bottom: 8px;
+}
+
+@media screen and (min-width: 1280px) {
+
+	.video-wrap button {
+		right: 90px;
+	}
+}
+
+.invisible {
+    opacity: 0;
+    transition: 100ms ease-in;
+}
+
+/* -----------------------------------------------------------------------------
+ * Icons
+ * -------------------------------------------------------------------------- */
+
+i { font-size: 8.0rem; }
+
+svg {
+	width: 100px;
+	height: 100px;
+}
+
+.sprite {
+	display: inline-block;
+	width: 95px;
+	height: 95px;
+	background-image: url('../assets/sprite.png');
+	background-repeat: no-repeat;
+}
+
+.sprite--warning {
+	background-position: 0 0;
+}
+
+.sprite--success {
+	background-position: -95px 0;
+}
+
+/* -----------------------------------------------------------------------------
+ * Only display content to screen readers
+ *
+ * See: http://a11yproject.com/posts/how-to-hide-content/
+ * -------------------------------------------------------------------------- */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
