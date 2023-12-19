@@ -1,0 +1,40 @@
+/* -----------------------------------------------------------------------------
+ * Autocomplete styles
+ * -------------------------------------------------------------------------- */
+
+section.searches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section.searches article {
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    section.searches {
+        flex-wrap: nowrap;
+    }
+
+    section.searches article {
+        width: 45%;
+    }
+}
+
+form {
+	margin-bottom: 24px;
+}
+
+input {
+	display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 16px 0 0;
+    font-size: 24px;
+}
+
+label {
+	display: block;
+	margin-top: 16px;
+}
