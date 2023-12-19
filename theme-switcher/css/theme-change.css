@@ -1,0 +1,134 @@
+/* -----------------------------------------------------------------------------
+ * Theme switch style
+ * -------------------------------------------------------------------------- */
+body.night {
+	/* For most modern browsers, filter can be used to immediately invert all colours */
+	filter: invert(100%) hue-rotate(180deg);
+}
+
+/* Explicitly defined changes in colour for the switched theme, to accommodate only for Internet Explorer */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	body.night,
+	body.night .hero {
+		background: #070705;
+		color: white;
+	}
+
+	body.night h1,
+	body.night a {
+		color: #bad1cf;
+	}
+
+	body.night p { color: white; }
+
+	body.night nav { background: #070705; }
+
+	body.night footer { background: #bad1cf; }
+
+	body.night footer p { color: #070705; }
+
+	body.night .hero__terminal {
+		background: #DDDDDD;
+		color: #070705;
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * Switch CSS
+ * -------------------------------------------------------------------------- */
+.switch-wrap {
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+.switch {
+	margin: 2rem auto;
+	text-align: center;
+}
+
+.switch-input {
+	display: none;
+}
+
+.switch-input,
+.switch-input:after,
+.switch-input:before,
+.switch-input *,
+.switch-input *:after,
+.switch-input *:before,
+.switch-input + .switch-button {
+  box-sizing: border-box;
+}
+
+.switch-input::-moz-selection,
+.switch-input:after::-moz-selection,
+.switch-input:before::-moz-selection,
+.switch-input *::-moz-selection,
+.switch-input *:after::-moz-selection,
+.switch-input *:before::-moz-selection,
+.switch-input + .switch-button::-moz-selection {
+  background: none;
+}
+
+.switch-input::selection,
+.switch-input:after::selection,
+.switch-input:before::selection,
+.switch-input *::selection,
+.switch-input *:after::selection,
+.switch-input *:before::selection,
+.switch-input + .switch-button::selection {
+  background: none;
+}
+
+.switch-input + .switch-button {
+  outline: 0;
+  display: block;
+  width: 8rem;
+  height: 4rem;
+  position: relative;
+  background: #f0f0f0;
+  border-radius: 2rem;
+  padding: 2px;
+  margin: 0 auto;
+  transition: all .4s ease;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.switch-input + .switch-button:after {
+  border-radius: 50%;
+  background: #fff;
+  transition: all .2s ease;
+}
+
+.switch-input + .switch-button:focus {
+	box-shadow: 0 0 7px 6px #5E9ED6;
+}
+
+.switch-input:checked + .switch-button {
+  background: #E2896C;
+}
+
+.switch-input + .switch-button:after, .switch-input + .switch-button:before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+}
+
+.switch-input + .switch-button:after {
+  left: 0;
+}
+
+.switch-input + .switch-button:before {
+  display: none;
+}
+
+.switch-input:checked + .switch-button:after {
+  left: 50%;
+}

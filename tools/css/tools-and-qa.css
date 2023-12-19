@@ -1,0 +1,21 @@
+/* -----------------------------------------------------------------------------
+ * Tools and QA styles
+ * -------------------------------------------------------------------------- */
+
+.feature__item {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+}
+
+.feature__item .section__title {
+	margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+
+	.feature__item .section__title {
+		min-height: 52px;
+		margin-bottom: 0;
+	}
+}

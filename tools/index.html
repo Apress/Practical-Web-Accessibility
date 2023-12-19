@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+	<title>Useful tools - Practical Web Accessibility</title>
+	<meta charset="UTF-8">
+	<meta name="robots" content="noindex" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/tools-and-qa.css">
+</head>
+<body>
+
+<header>
+	<a class="skip-to-main-content" href="#content">skip to main content</a>
+
+	<nav>
+		<button aria-label="Navigation Menu" aria-expanded="false" class="menu__item toggle"><span></span></button>
+		<ul class="menu" id="menu">
+			<li class="menu__item"><a href="https://twitter.com/mrfirthy" class="link">X (Twitter)</a></li>
+			<li class="menu__item"><a href="https://mrfirthy.me" class="link">Portfolio</a></li>
+			<li class="menu__item"><a href="https://codepen.io/mrfirthy" class="link">Codepen</a></li>
+			<li class="menu__item"><a href="https://github.com/mrfirthy" class="link">Github</a></li>
+		</ul>
+    </nav>
+    <div class="hero">
+		<p class="hero__title">Practical Web Accessibility</p>
+		<p class="hero__description">A practical example for the <a href="https://inclusive.guide">Second Edition</a> by <a href="https://mrfirthy.me">Ashley Firth</a></p>
+		<h1 class="sr-only">Practical Example: Handy tools and apps</h1>
+	</div>
+	<div class="hero__terminal" aria-hidden="true">
+		<pre>
+			<code class="shell-session demo">Today's lesson: <span>Handy tools & apps</span></code>
+		</pre>
+    </div>
+</header>
+
+<main id="content" class="wrapper">
+	<section>
+		<p>Because it's always a pain to type long web addresses from a book into a web browser, here are handy links for every Tool mentioned in Chapter 11 of the book.</p>
+
+		<h2>ACCESS Checklist</h2>
+
+		<hr>
+
+		<h3>Aesthetics</h3>
+
+		<hr>
+
+		<div class="feature">
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://developers.google.com/web/tools/lighthouse/">Lighthouse</a></h3>
+				<p>Open-source tool for auditing web pages. Available inside Google Chrome as standard, and creates shareable reports that are scored out of 100.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://developer.chrome.com/blog/full-accessibility-tree/">Guide to accessibility tree &mdash; Google Chrome</a></h3>
+				<p>An overview of what the accessibility tree within Chrome dev tools is, and how to use it to identify and debug accessibility issues.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://webaim.org/resources/contrastchecker/">WebAIM contrast ratio checker</a></h3>
+				<p>An online tool that lets you check the contrast ratio between two colours according to the various levels and success criteria within WCAG.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://www.tpgi.com/color-contrast-checker/">TGPi contrast analyser tool</a></h3>
+				<p>A colour contrast analyser that can be installed on both Mac and Windows. This sits as a small window on your computer, and displays whether the selected colours pass the three levels of WCAG contrast checks. It also has a swatch tool that allows you to select a colour from anything on your screen.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://michelf.ca/projects/sim-daltonism/">Sim Daltonism</a></h3>
+				<p>Sim Daltonism lets you visualise colours as they are perceived with various types of colour blindness. Use the camera on your iOS device, or use the Mac app to filter a region of the screen.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title">Design tools</h3>
+				<p>A series of accessibility-based plugins for popular design tools. There are some tools that are available for all platforms, for those teams who use multiple tools.</p>
+
+				<ul>
+					<li><a href="https://www.figma.com/community/collections/plugins-accessibility">Figma - Plugin library</a></li>
+					<li><a href="https://www.sketch.com/extensions/plugins/">Sketch - Plugin library</a></li>
+					<li><a href="https://blog.developer.adobe.com/improve-accessibility-with-these-five-plugins-for-adobe-xd-and-google-chrome-db5b5f084e4e">Adobe XD - 5 accessibility plugins</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<hr>
+
+		<h3>Content</h3>
+
+		<hr>
+
+		<div class="feature">
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://chromewebstore.google.com/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?pli=1">Headings Map</a></h3>
+				<p>A browser extension that creates a heading tree based on the web page you're on. It will highlight in red any headings that aren't semantic so you can fix them.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://chromewebstore.google.com/detail/validity/bbicmjjbohdfglopkidebfccilipgeif?hl=en-GB">Validity extension</a></h3>
+				<p>Validity can be used to quickly validate your HTML documents from the toolbar. Clicking the icon will display all the errors for the page in the browser console.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://w3c.github.io/webvtt.js/parser.html">WebVTT Validator</a></h3>
+				<p>Tool created by the W3C to allow for quick validation of the captions / subtitles you've created. It will display errors inline, and you can edit them from within the page.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://www.happyscribe.com/subtitle-tools/convert-srt-to-vtt">HappyScribe caption file converter</a></h3>
+				<p>A free online tool to convert subtitle and caption files between a range of different formats for use on different platforms. It also allows you to create a transcript from a subtitle file.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://thereadtime.com/">Reading time calculator</a></h3>
+				<p>Input your text into this website in order to calculate how long the average person would take to read it. It takes into account word count, length of words, and length of sentences.</p>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<hr>
+
+		<h3>Cognition</h3>
+
+		<hr>
+
+		<div class="feature">
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm/related">Web Developer extension</a></h3>
+				<p>A browser extension that allows you to check the content of your web page against a range of accessibility checks quickly. Tests include disabling styles, outlining headings, and displaying the content of <code>alt</code> attributes on images.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://wave.webaim.org/extension/">WAVE evaluation tool</a></h3>
+				<p>An extension that will automatically inject a series of icons and indicators into the page to display not only errors and warnings but also accessibility features that are currently working, like HTML tags, and ARIA attributes.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://app.readable.com/text/?demo&_ga=2.4389051.909974090.1695729272-502300.1695729272">Flesch-Kincaid reading ease test</a></h3>
+				<p>An online test to check how easy it is for someone to read your content, based on the Flesch-Kincaid reading ease test. Simply input the content and have it tested.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://hemingwayapp.com/">Hemingway editor</a></h3>
+				<p>This editor highlights parts of your text that it deems hard to read for users, and can help you make it easier. It provides a readability grade, shows different colours to represent different issues, and even has an AI feature to suggest edits.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://app.readable.com/text/?demo&_ga=2.4389051.909974090.1695729272-502300.1695729272">Dark Patterns 'Hall of shame'</a></h3>
+				<p>A gallery of user-submitted examples of dark patterns and the companies responsible for them. This is maintained on the site of the person who coined the term 'dark patterns', Harry Brignull.</p>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<hr>
+
+		<h3>Ease of use</h3>
+
+		<hr>
+
+		<div class="feature">
+			<div class="feature__item">
+				<h3 class="section__title">Screen Readers</h3>
+				<p>A list of free and paid screen readers on a range of different operating systems, allowing you to test how your site can be navigated without visual interaction.</p>
+
+				<ul>
+					<li><a href="https://support.apple.com/en-gb/guide/voiceover/welcome/mac">VoiceOver &mdash; iOS</a></li>
+					<li><a href="https://support.google.com/accessibility/android/answer/6283677?hl=en-GB">TalkBack &mdash; Android</a></li>
+					<li><a href="https://support.freedomscientific.com/Content/Documents/Manuals/JAWS/JAWS-Quick-Start-Guide.pdf">JAWS &mdash; Windows</a></li>
+					<li><a href="https://www.nvaccess.org/">NVDA &mdash; Windows</a></li>
+					<li><a href="https://support.microsoft.com/en-us/windows/chapter-1-introducing-narrator-7fe8fd72-541f-4536-7658-bfc37ddaf9c6">Narrator &mdash; Windows</a></li>
+				</ul>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://dequeuniversity.com/screenreaders">Deque University - Screen reader usage guides</a></h3>
+				<p>Deque University published and maintain a series of excellent guides and shortcuts that you can use as a reference until you feel comfortable. They explain the best combinations of screen reader and browser for testing, cover all of the popular options, and many have been condensed to single page guides that you can print out or have open.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://assistivlab.com">Assistiv Labs</a></h3>
+				<p>Allows you to manually test a range of assistive software directly from your browser, by remotely connecting to real assistive technologies. Through this tool, you can conduct manual testing on a range of screen readers, high contrast mode, and screen magnifiers.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://sarasoueidan.com/blog/testing-environment-setup">Sara Soueidan - Screen reader setup guide</a></h3>
+				<p>A comprehensive guide around how to set up various screen readers on desktop and mobile devices. It covers typical navigation, good combinations of tools, and more.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://www.w3.org/WAI/ARIA/apg/">ARIA Authoring Processes Guide</a></h3>
+				<p>Learn to use the accessibility semantics defined by the Accessible Rich Internet Application (ARIA) specification to create accessible web experiences. This guide describes how to apply accessibility semantics to common design patterns and widgets. It provides design patterns and functional examples complemented by in-depth guidance for fundamental practices.</p>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<hr>
+
+		<h3>Settings</h3>
+
+		<hr>
+
+		<div class="feature">
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles">Gov UK - Persona profiles</a></h3>
+				<p>A series of hypothetical users, with specific devices and access needs, that testers can use to take into account the experience for those with disabilities.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles">Empathy Lab</a></h3>
+				<p>Help your team understand how people with disabilities experience and use technology, by using a range of technologies that simulate various access needs. You can engage with companies to set up your own, or use another company's. Below is a list featuring examples of both.</p>
+
+				<ul>
+					<li><a href="https://www.deque.com/services/accessibility-empathy-lab/">Deque - Set up an empathy lab</a></li>
+					<li><a href="https://www.horlix.com/accessibility-empathy-lab-experience/">HeX Productions - Visit their empaty lab</a></li>
+					<li><a href="https://gds.blog.gov.uk/2018/06/20/creating-the-uk-governments-accessibility-empathy-lab/">GOV UK - Lab open to all in government</a></li>
+					<li><a href="https://www.youtube.com/watch?v=JEZpIFg1Xyk">Sony EU - Video of their empathy lab</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<hr>
+
+		<h2>Automated accessibility tools</h2>
+
+		<hr>
+
+		<div class="feature">
+			<div class="feature__item">
+				<h3 class="section__title">axe-core</h3>
+				<p>Open source, completely free, and the most popular testing engine in the world, with millions of downloads every week. axe-core is the foundation for a lot of tools, but it can be used standalone as a browser extension, and you can write your own tests with it.</p>
+
+				<ul>
+					<li><a href="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd">Chrome extension</a></li>
+					<li><a href="https://github.com/dequelabs/axe-core">Github</a></li>
+					<li><a href="https://www.youtube.com/watch?v=Oy44NA1F5u4">Testing tutorial</a></li>
+				</ul>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://www.accesslint.com/">AccessLint</a></h3>
+				<p>A tool that automatically reviews code submitted to Github as a pull request and comments if it finds any issues. It also lets you know when you've fixed them.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://pa11y.org/">Pa11y</a></h3>
+				<p>Perfect for when you're developing. Pa11y can be run as a command or set up to watch files, and lets you know if what you've written is accessible or not.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://github.com/pa11y/pa11y-dashboard">Pa11y dashboard</a></h3>
+				<p>A Pa11y dashboard can show you all of the current errors, warnings, and notices that you currently have on your website. It also shows you how those numbers have changed over time, and you can download that information at any time.</p>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<hr>
+
+		<h2>Other useful tools</h2>
+
+		<hr>
+
+		<div class="feature">
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://a11yproject.com">The A11y Project</a></h3>
+				<p>All-round useful website for all things accessibility - containing guides, how-to's, and an active blog covering changes in accessibility.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://github.com/UKHomeOffice/posters">Gov UK - Designing for accessibility posters</a></h3>
+				<p>A range of great starter posters highlighting simple do's and don'ts for a range of disabilities. Perfect for starting a discussion with companies about accessibility.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://www.w3.org/WAI/WCAG22/quickref/?versions=2.2">How to Meet WCAG (Quick Reference)</a></h3>
+				<p>To help you decide the WCAG compliance level you will aim for, and understand what that level entails, the W3C created a handy site - the WCAG quick reference site. It includes all of the guidelines, success criteria, and techniques and failures, organised to make navigating and finding success criteria and their relevant supporting documents easier.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://www.gov.uk/government/publications/sample-accessibility-statement/sample-accessibility-statement-for-a-fictional-public-sector-website">Writing an accessibility statement</a></h3>
+				<p>It's important to notify your customers of your progress: what you're aiming for, that you're not where you want to be, and to reach out if they find anything impossible on your site. This is most commonly handled through publishing an accessibility statement, which you can typically find in the footer of most websites. The UK government has a nice sample statement you can adapt for your own use.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://experte.com/accessibility">Experte - Accessibility website crawler</a></h3>
+				<p>Experte have created a neat tool where you provide the homepage of your website, and it will crawl through all other public pages within that domain to find accessibility issues. It's not all-encompassing in the issues it checks for, but it runs through some of the most common ones and can check up to 500 pages.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://www.gov.uk/service-manual/user-research/running-research-sessions-with-people-with-disabilities">Gov UK - Running research with those with disabilities</a></h3>
+				<p>A guide written to help people planning to conduct their own research sessions with people who have disabilities. Includes advice for before, during, and after a session.</p>
+			</div>
+			<div class="feature__item">
+				<h3 class="section__title"><a href="https://a11yproject.com/checklist/">a11y project - list of professional help for accessibility</a></h3>
+				<p>For if you feel that you need a helping hand when it comes to making your site(s) accessible. a11y project have collated some trusted accessibility consultants.</p>
+			</div>
+		</div>
+	</section>
+</main>
+
+<footer>
+	<p>Copyright Joe's website emporium.</p>
+	<p>Part of a series of examples for the book 'Practical Web Accessibility' by Ashley Firth</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

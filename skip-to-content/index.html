@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+	<title>Skip to main content - Practical Web Accessibility</title>
+	<meta charset="UTF-8">
+	<meta name="robots" content="noindex" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/skip-to-main-content.css">
+</head>
+<body>
+
+<header>
+	<a class="skip-to-main-content" href="#content">skip to main content</a>
+
+
+	<nav>
+		<button aria-label="Navigation Menu" aria-expanded="false" class="menu__item toggle"><span></span></button>
+		<ul class="menu" id="menu">
+			<li class="menu__item"><a href="https://twitter.com/mrfirthy" class="link link--dark">X (Twitter)</a></li>
+			<li class="menu__item"><a href="https://mrfirthy.me" class="link link--dark">Portfolio</a></li>
+			<li class="menu__item"><a href="https://codepen.io/mrfirthy" class="link link--dark">Codepen</a></li>
+			<li class="menu__item"><a href="https://github.com/mrfirthy" class="link link--dark">Github</a></li>
+		</ul>
+    </nav>
+    <div class="hero">
+		<p class="hero__title">Practical Web Accessibility</p>
+		<p class="hero__description">A practical example for the <a href="https://inclusive.guide">Second Edition</a> by <a href="https://mrfirthy.me">Ashley Firth</a></p>
+		<h1 class="sr-only">Practical Example: Skip to main content link</h1>
+	</div>
+	<div class="hero__terminal" aria-hidden="true">
+		<pre>
+			<code class="shell-session demo">Today's lesson: <span>'Skip to main content' link</span></code>
+		</pre>
+    </div>
+</header>
+
+<main id="content" tabindex="-1" class="wrapper">
+	<article>
+		<hr>
+
+		<h2>How to use the link</h2>
+		<p>Hit the <code>tab</code> key to bring up the 'Skip to main content' link and hit <code>Enter</code> to be sent directly past the common page items such as the menu to the unique page content.</p>
+		<h2>Testing the link</h2>
+		<p>Try using this page with your screen reader of choice, and experience the ease of use and time saved thanks to the link. To further show the impact of this, in this project folder you will also find a file called <a href="index-without-link.html"><code>index-without-link.html</code></a>. This is, unsurprisngly, a replica of this page but without the 'Skip to main content' link added. You should try using that page with a screen reader too, and see how frustating not having this feature can be.</p>
+
+		<div class="spacing">
+			<a 
+				href="index-without-link.html"
+				class="button--primary"
+			>
+				Try page without 'Skip to main content' link
+			</a>
+		</div>
+
+		<hr>
+
+		<h3>Carl Sagan &mdash; Pale Blue Dot</h3>
+		<p>Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar," every "supreme leader," every saint and sinner in the history of our species lived there--on a mote of dust suspended in a sunbeam.</p>
+		<p>The Earth is a very small stage in a vast cosmic arena. Think of the rivers of blood spilled by all those generals and emperors so that, in glory and triumph, they could become the momentary masters of a fraction of a dot. Think of the endless cruelties visited by the inhabitants of one corner of this pixel on the scarcely distinguishable inhabitants of some other corner, how frequent their misunderstandings, how eager they are to kill one another, how fervent their hatreds.</p>
+		<p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves</p>
+		<p>The Earth is the only world known so far to harbor life. There is nowhere else, at least in the near future, to which our species could migrate. Visit, yes. Settle, not yet. Like it or not, for the moment the Earth is where we make our stand.</p>
+		<p>It has been said that astronomy is a humbling and character-building experience. There is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world. To me, it underscores our responsibility to deal more kindly with one another, and to preserve and cherish the pale blue dot, the only home we've ever known.</p>
+	</article>
+</main>
+
+<footer>
+	<p>Copyright Joe's website emporium.</p>
+	<p>Part of a series of examples for the book 'Practical Web Accessibility' by Ashley Firth</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
